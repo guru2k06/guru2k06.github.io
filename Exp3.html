@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DHTML Form Validation</title>
+    <style>
+        body { font-family: Arial; }
+        .error { color: red; font-size: 12px; }
+    </style>
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let age = document.getElementById("age").value;
+
+            let valid = true;
+
+            if (name === "") {
+                document.getElementById("nameError").innerHTML = "Required";
+                valid = false;
+            } else {
+                document.getElementById("nameError").innerHTML = "";
+            }
+
+            let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email.match(pattern)) {
+                document.getElementById("emailError").innerHTML = "Invalid email";
+                valid = false;
+            } else {
+                document.getElementById("emailError").innerHTML = "";
+            }
+
+            if (age < 18 || age > 60) {
+                document.getElementById("ageError").innerHTML = "18–60 only";
+                valid = false;
+            } else {
+                document.getElementById("ageError").innerHTML = "";
+            }
+            if (valid) {
+                alert("Form submitted successfully!");
+            }
+            return valid;
+        }
+    </script>
+</head>
+<body>
+<form onsubmit="return validateForm()">
+    <h3>Registration Form</h3>
+    Name:<br>
+    <input type="text" id="name">
+    <span id="nameError" class="error"></span><br><br>
+    Email:<br>
+    <input type="text" id="email">
+    <span id="emailError" class="error"></span><br><br>
+    Age:<br>
+    <input type="number" id="age">
+    <span id="ageError" class="error"></span><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
