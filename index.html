@@ -2,28 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maps</title>
+    <title>Web Technology Laboratory</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<center><h1>IndiaMap</h1></center>
-<div id = "map-div">
-    <img id="image" src="map.jpg" usemap="#image-map">
-    <map name="image-map">
-    <area href="tn.html" coords="298,634,201,689,223,777,285,715,297,664" shape="poly">
-    <area href="kerla.html" coords="155,654,183,712,213,772,206,711" shape="poly">
-    <area href="karna.html" coords="222,504,144,552,165,654,222,681,249,639,211,625" shape="poly">
-    <area href="ap.html" coords="248,465,222,567,253,642,313,570,406,483,320,520" shape="poly">
-    <area href="rajasthan.html" coords="145,189,40,265,150,369,242,277" shape="poly">
-</map>
-</div>
+
+    <!-- Header -->
+    <header>
+        <h1>Web Technology Laboratory</h1>
+        <p>Total Experiments: 7</p>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container">
+
+        <!-- Experiments Section -->
+    <div class="experiments">
+        <h2>Lab Experiments</h2>
+
+        <div class="exp-card">
+            <strong>Experiment 1:</strong> Image Mapping in HTML
+        </div>
+
+        <div class="exp-card">
+            <strong>Experiment 2:</strong> Creation of HTML Page using Cascading Style Sheet (CSS)
+        </div>
+
+        <div class="exp-card">
+            <strong>Experiment 3:</strong> Client Side Scripts for Validating Web Form Controls using DHTML
+        </div>
+
+        <div class="exp-card">
+            <strong>Experiment 4:</strong> Installation of Apache Tomcat Web Server
+        </div>
+
+        <div class="exp-card">
+            <strong>Experiment 5A:</strong> Invoke Servlets from HTML Forms  
+            <br>
+            <strong>Experiment 5B:</strong> Session Tracking using Hidden Form Fields
+        </div>
+
+        <div class="exp-card">
+            <strong>Experiment 6A:</strong> Online Examination using Servlets  
+            <br>
+            <strong>Experiment 6B:</strong> Displaying Student Mark List
+        </div>
+
+        <div class="exp-card">
+            <strong>Experiment 7:</strong> Programs using XML – Schema, XSLT / XSL
+        </div>
+    </div>
+
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <h3>Student Details</h3>
+            <p><strong>Name:</strong> Guruprasath N</p>
+            <p><strong>Register No:</strong> 710023104046</p>
+            <p><strong>Department:</strong> B.E Computer Sceince and Engineering</p>
+            <p><strong>College:</strong> Anna University Regional Campus Coimbatore</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Web Technology Lab © 6th Semester</p>
+    </footer>
 
 </body>
 </html>
-<style>
-    #map-div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
