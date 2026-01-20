@@ -83,3 +83,9 @@ footer {
     margin-top: 20px;
     font-size: 13px;
 }
+.exp-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
